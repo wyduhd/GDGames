@@ -1,0 +1,5 @@
+# Godot 4 editor data, imported resources, and shader caches.
+**/.godot/
+
+# macOS Finder metadata.
+.DS_Store
