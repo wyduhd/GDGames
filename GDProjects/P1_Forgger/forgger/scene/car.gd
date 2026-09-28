@@ -1,12 +1,12 @@
 extends Area2D
 
 var direction = Vector2.LEFT
-var speed = 1
+var speed = 100
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	if position.x < 0:
-		direction.x = 100
+	if position.x < 0:  # 如果出生在屏幕左边，也就是x小于0，则将方向向量中的x设置为正，从左向右动
+		direction.x = 1
 		$Sprite2D.flip_h = true
 
 

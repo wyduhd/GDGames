@@ -3,8 +3,6 @@ extends CharacterBody2D
 var direction:Vector2 = Vector2(1,1)
 var speed:int = 200
 
-
-
 func _process(_delta: float) -> void:
 	# 通过Input.get_vector方法获取4个方向的向量，这四个名字的映射操作名称和设置中的操作隐射向对应
 	direction = Input.get_vector("left","right","up","down")
